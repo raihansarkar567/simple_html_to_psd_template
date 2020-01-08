@@ -1,0 +1,478 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Header section*/
+header{
+	width: 1200px;
+    height: 134px;
+    background-color: #27292f;
+    margin: 0 auto;
+	/*border: 1px solid black;*/
+}
+.logo{
+	width: 190px;
+    height: 60px;
+    float: left;
+    margin: 37px 30px;
+}
+.logo img{
+	margin: 0px;
+    width: 190px;
+    height: 60px;
+}
+.logo p{
+    margin: 0;
+    font-size: 13px;
+    /*margin-top: 6px;*/
+    color: #fff;
+}
+.nav{
+
+}
+.nav ul{
+	float: right;
+    margin: 95px 36px 0px 0px;
+    list-style: none;
+    border-radius: 8px 8px 0px 0px;
+    background: #333333; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#555555, #333333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#555555, #333333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#555555, #333333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#555555, #333333); /* Standard syntax (must be last) */
+}
+.nav ul li{
+	float: left;
+    height: 39px;
+    /*background-color: #434343;*/
+    border-radius: 8px 8px 0px 0px;
+    background: #333333; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#555555, #333333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#555555, #333333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#555555, #333333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#555555, #333333); /* Standard syntax (must be last) */
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Georgia', Times, serif;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 8px 8px 0px 0px;
+}
+.nav ul li a:hover{
+	background-color: #0aaafb;
+    color: #fff;
+    transition:all .60s;
+}
+.nav ul li a:active{
+	background-color: #fb7700;
+    color: #fff;
+}
+.nav ul li ul{
+    border-radius: 0;
+    margin: 0;
+    position: absolute;
+    background: transparent;
+    z-index: 2;
+}
+.nav ul li ul li{
+    margin-top: 1px;
+    display: none;
+    float: none;
+}
+.nav ul li:hover ul li{
+    display: block;
+    opacity: .8;
+}
+/*Header section end*/
+
+
+/*slider*/
+.slider{
+	width: 1200px;
+	height: 530px;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+}
+/*slider end*/
+
+
+/*shout*/
+.shout{
+	width: 1200px;
+	height: 134px;
+	background-color: #e7e7e7;
+	margin: 0 auto;
+    position: relative;
+    border-bottom: 5px solid #dadada;
+}
+.shout p{
+	color: #1f222c;
+    font-size: 38px;
+    padding: 25px;
+    width: 75%;
+    overflow: auto;
+}
+.button{
+    display: block;
+    width: 260px;
+    height: 60px;
+    background-color: #1f232c;
+    border-radius: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    left: 920px;
+    text-align: center;
+    line-height: 3;
+    font-size: 22px;
+    color: #fff;
+    border: 2px solid gray;
+    box-shadow: 0 2px 0 gray;
+    transition: all 0.1s linear;
+}
+.button:active{
+    box-shadow: 0 0 0;
+}
+/*shout end*/
+
+/*contact*/
+.contact{
+    width: 1170px;
+    height: 375px;
+    /*background-color: lightgray;*/
+    margin: 30px auto;
+}
+.titleIdBox{
+    width: 570px;
+    height: 100%;
+    background-color: #fff;
+    margin-right: 30px;
+    float: left;
+}
+.titleLine{
+    width: 570px;
+    height: 5px;
+    background-color: #ebebeb;
+    position: relative;
+    margin: 10px auto;
+}
+.titleLine h2{
+    padding: 5px;
+    background-color: #fff;
+    color: gray;
+    position: absolute;
+    top: -10px;
+    right: 210px;
+}
+.titleIdBox article{
+    width: 100%;
+    height: 175px;
+    padding: 20px 0px;
+    position: relative;
+}
+.thamb{
+    position: relative;
+    display: block;
+    width: 128px;
+    height: 128px;
+    float: left;
+}
+.thamb img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.thamb a::after{
+    content: "\f0c1";
+    font-family: fontawesome;
+    color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.5s;
+    transform: scale(3);
+    opacity: 0;
+}
+.thamb:hover a::after{
+    transform: scale(1);
+    opacity: 0.7;
+}
+.titleIdBox article a h3{
+    color: gray;
+    float: left;
+    padding: 0px 20px;
+}
+.titleIdBox article p{
+    float: left;
+    width: 77%;
+    max-height: 92px;
+    padding: 20px 20px;
+    font-size: 16px;
+    color: #999;
+    overflow: hidden;
+}
+.more a{
+    color: #957964;
+    float: left;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+.titleVideoBox{
+    width: 570px;
+    height: 100%;
+    /*background-color: #e0dbdb;*/
+    float: left;
+}
+.video{
+    width: 530px;
+    height: 38px;
+    background-color: #363636;
+    margin: 34px 0px 2px 21px;
+    color: gray;
+    font-size: 24px;
+    padding: 5px 30px;
+}
+iframe{
+    margin: 0px 0px 0px 21px;
+}
+/*contact end*/
+
+/*filter gallery*/
+.filter{
+    width: 1200px;
+    height: 38px;
+    margin: 0 auto;
+    border-top: 1px solid #8c8c8c;
+    border-bottom: 1px dotted #8c8c8c;
+}
+.filter h1{
+    text-transform: uppercase;
+    color: #666;
+    border-right: 1px solid #8c8c8c;
+    padding: 7px 10px;
+    display: inline-block;
+    float: left;
+}
+.filter ul{
+    list-style: none;
+}
+.filter ul li{
+    float: left;
+    padding: 9px 37px;
+    font-size: 15px;
+    border-right: 1px dotted #666;
+    cursor: pointer;
+}
+.filter ul li:hover{
+    background-color: #7fbfef;
+    transition:all .50s;
+}
+.active{
+    background-color: #0aaafb;
+    color: #fff;
+}
+
+
+.gallery{
+    width: 1200px;
+    height: 560px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.photo{
+    width: 350px;
+    height: 250px;
+    background-color: #eee;
+    float: left;
+    margin: 30px 0px 0px 30px;
+}
+.photoThamb{
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 200px;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.photoThamb a::before{
+    background: #000;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: all 0.5s;
+    transform: scaleX(0);
+}
+.photoThamb:hover a::before{
+    transform: scaleX(1);
+}
+.photoThamb a::after{
+    content: "\f0c1";
+    font-family: fontawesome;
+    color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.5s;
+    transform: scale(3);
+    opacity: 0;
+}
+.photoThamb:hover a::after{
+    transform: scale(1);
+    opacity: 0.7;
+}
+.photo h2{
+    color: gray;
+    text-align: center;
+    margin: 4px;
+}
+.photo p{
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+}
+/*filter gallery end*/
+
+/*feature*/
+.feature{
+    width: 1200px;
+    height: 200px;
+    margin: 30px auto;
+    /* float: left; */
+    /* padding: 35px 46px; */
+    background-color: #efefef;
+}
+.feature h2{
+    margin: 10px 46px;
+}
+.featureBox{
+    width: 175px;
+    height: 163px;
+    display: inline-block;
+    margin: 0px 15px;
+}
+marquee{
+    width: 1110px;
+    margin: 0px 0px 0px 30px;
+}
+marquee img{
+    max-width: 175px;
+    max-height: 130px;
+}
+.featureBox p{
+    font-size: 12px;
+    overflow: hidden;
+}
+.featureBox p a{
+ color: blue;
+}
+marquee a:hover{
+    filter: brightness(0.6);
+    transition: all 0.60s;
+    -webkit-transition: all 0.60s;
+    -moz-transition: all 0.60s;
+    -webkit-filter: brightness(0.6);
+    -moz-filter: brightness(0.6);
+}
+/*feature end*/
+
+/*footer*/
+footer{
+    width: 1200px;
+    height: 300px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+}
+.footerDiv{
+    width: 275px;
+    height: 100%;
+    /* background-color: red; */
+    float: left;
+    margin: 0px 12px;
+    padding: 10px 0px;
+}
+.footerDiv h1{
+    color: #2c2c2c;
+    line-height: 60px;
+}
+.footerDiv p{
+    font-size: 12px;
+    line-height: 25px;
+    color: #7c7c7c;
+}
+.footerDiv p a{
+    color: #1f232c;
+}
+.quickLink{
+     border-bottom: 1px solid #c4c4c4;
+}
+.footerDiv h2{
+    color: #2c2c2c;
+}
+/*footer end*/
+
+/*copyright*/
+.copyright{
+    width: 1200px;
+    background-color: #1f232c;
+    font-size: 17px;
+    color: gray;
+    padding: 20px;
+    margin: 0 auto;
+}
+.copyright p{
+    display: inline-block;
+}
+.copyrightRight{
+    float: right;
+}
+/*copyright end*/
+
+
+/*responsive*/
+@media  screen  and  (max-width: 959px) {
+        header{
+        width: 100%;
+    }
+        .logo{
+        width: 30%;
+    }
+    .slider{
+    width: 100%;
+    }
+        .shout{
+        width: 100%;
+    }
+    .shout p{
+        width: 75%;
+    }
+    .button{
+        width: 25%;
+        left: 75%;
+
+    }
+}
